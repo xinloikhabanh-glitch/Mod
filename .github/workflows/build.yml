@@ -1,3 +1,6 @@
+# Tu dong build file .jar tren GitHub (khong can cai gi tren may).
+# Cach dung: upload toan bo du an len repo, vao tab Actions -> "Build mod" -> Run workflow.
+# File .jar nam o muc "Artifacts" khi chay xong.
 name: Build mod
 on:
   push:
@@ -7,6 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Tim thu muc du an (noi co build.gradle)
+        run: |
+          F=$(find . -name build.gradle -not -path './.git/*' | head -n1)
+          if [ -z "$F" ]; then
+            echo "KHONG THAY build.gradle trong repo. Cac file hien co:"
+            find . -not -path './.git/*' -type f | head -50
+            exit 1
+          fi
+          echo "DIR=$(dirname "$F")" >> "$GITHUB_ENV"
+          echo "Du an o: $(dirname "$F")"
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -14,8 +27,10 @@ jobs:
       - uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: 7.6.4
-      - run: gradle build --no-daemon
+      - name: Build
+        working-directory: ${{ env.DIR }}
+        run: gradle build --no-daemon
       - uses: actions/upload-artifact@v4
         with:
           name: aibuilder-jar
-          path: build/libs/*.jar
+          path: ${{ env.DIR }}/build/libs/*.jar
