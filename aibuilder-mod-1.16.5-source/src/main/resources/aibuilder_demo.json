@@ -1,0 +1,32 @@
+{
+  "name": "demo-house",
+  "palette": {
+    "S": "minecraft:stone_bricks",
+    "P": "minecraft:oak_planks",
+    "L": "minecraft:oak_log",
+    "G": "minecraft:glass_pane",
+    "C": "minecraft:cobblestone",
+    "Z": "minecraft:spruce_planks",
+    "LAN": "minecraft:lantern[hanging=true]",
+    "DL": "minecraft:oak_door[half=lower,facing=north]",
+    "DU": "minecraft:oak_door[half=upper,facing=north]"
+  },
+  "ops": [
+    {"op": "fill", "from": [-2, -1, -2], "to": [14, -1, 12], "block": "C"},
+    {"op": "fill", "from": [0, 0, 0], "to": [12, 0, 10], "block": "P"},
+    {"op": "walls", "from": [0, 1, 0], "to": [12, 5, 10], "block": "S"},
+    {"op": "line", "from": [0, 1, 0], "to": [0, 5, 0], "block": "L"},
+    {"op": "line", "from": [12, 1, 0], "to": [12, 5, 0], "block": "L"},
+    {"op": "line", "from": [0, 1, 10], "to": [0, 5, 10], "block": "L"},
+    {"op": "line", "from": [12, 1, 10], "to": [12, 5, 10], "block": "L"},
+    {"op": "fill", "from": [3, 2, 0], "to": [4, 3, 0], "block": "G"},
+    {"op": "fill", "from": [8, 2, 0], "to": [9, 3, 0], "block": "G"},
+    {"op": "set", "pos": [6, 1, 0], "block": "DL"},
+    {"op": "set", "pos": [6, 2, 0], "block": "DU"},
+    {"op": "fill", "from": [0, 6, 0], "to": [12, 6, 10], "block": "Z"},
+    {"op": "pyramid", "center": [6, 7, 5], "r": 6, "block": "Z"},
+    {"op": "set", "pos": [6, 5, 5], "block": "LAN"},
+    {"op": "cylinder", "center": [17, 0, 5], "r": 3, "h": 9, "block": "S", "hollow": true},
+    {"op": "cone", "center": [17, 9, 5], "r": 4, "h": 5, "block": "Z"}
+  ]
+}

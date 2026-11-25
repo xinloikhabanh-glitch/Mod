@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+modId="aibuilder"
+version="1.0.0"
+displayName="AI Builder"
+description='''
+Xay cong trinh tu dong bang AI. Go /aibuild <mo ta> trong game.
+'''
+
+[[dependencies.aibuilder]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.aibuilder]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
