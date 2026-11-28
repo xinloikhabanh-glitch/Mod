@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+modId="titanbosses"
+version="1.0.0"
+displayName="Titan Bosses"
+description='''
+5 boss manh gap 5 lan boss goc va bo do Titanite manh, cung gap 4 lan netherite.
+'''
+
+[[dependencies.titanbosses]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.titanbosses]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"

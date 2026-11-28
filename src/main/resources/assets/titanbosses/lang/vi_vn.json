@@ -1,0 +1,23 @@
+{
+  "item.titanbosses.titanite_shard": "Manh Titanite",
+  "item.titanbosses.titanite_ingot": "Thoi Titanite",
+  "item.titanbosses.titanite_sword": "Kiem Titanite",
+  "item.titanbosses.titanite_pickaxe": "Cuoc Titanite",
+  "item.titanbosses.titanite_axe": "Riu Titanite",
+  "item.titanbosses.titanite_shovel": "Xeng Titanite",
+  "item.titanbosses.titanite_hoe": "Cuoc Dat Titanite",
+  "item.titanbosses.titanite_helmet": "Mu Titanite",
+  "item.titanbosses.titanite_chestplate": "Ao Giap Titanite",
+  "item.titanbosses.titanite_leggings": "Quan Titanite",
+  "item.titanbosses.titanite_boots": "Giay Titanite",
+  "entity.titanbosses.crypt_titan": "Crypt Titan (Thuy Quai Mo)",
+  "item.titanbosses.crypt_titan_sigil": "An Trieu Hoi Crypt Titan",
+  "entity.titanbosses.blaze_overlord": "Blaze Overlord (Chua Te Lua)",
+  "item.titanbosses.blaze_overlord_sigil": "An Trieu Hoi Blaze Overlord",
+  "entity.titanbosses.venom_matriarch": "Venom Matriarch (Nhen Chua)",
+  "item.titanbosses.venom_matriarch_sigil": "An Trieu Hoi Venom Matriarch",
+  "entity.titanbosses.wither_lord": "Wither Lord (Chua Te Wither)",
+  "item.titanbosses.wither_lord_sigil": "An Trieu Hoi Wither Lord",
+  "entity.titanbosses.storm_ravager": "Storm Ravager (Ravager Bao Tap)",
+  "item.titanbosses.storm_ravager_sigil": "An Trieu Hoi Storm Ravager"
+}

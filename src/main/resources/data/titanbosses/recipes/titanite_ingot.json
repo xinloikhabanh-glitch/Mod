@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "titanbosses:titanite_shard"
+    },
+    {
+      "item": "titanbosses:titanite_shard"
+    },
+    {
+      "item": "titanbosses:titanite_shard"
+    },
+    {
+      "item": "titanbosses:titanite_shard"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "result": {
+    "item": "titanbosses:titanite_ingot",
+    "count": 1
+  }
+}
